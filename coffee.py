@@ -105,7 +105,7 @@ while machine_on:
     if ingredients_check == True:
       change = coins_and_change(customer_choice)
       if change:
-        print(change)
+        print(f"Here is your ${change} in change.")
         print(f"Here is your {customer_choice}. Enjoy!")
         deduct_resources(ingredients)
       elif change == False:
